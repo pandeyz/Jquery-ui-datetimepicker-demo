@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+
+	<!-- Timepicker -->
+	<script type="text/javascript" src="http://trentrichardson.com/examples/timepicker/jquery-ui-timepicker-addon.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+
+	<!-- Timepicker -->
+	<link rel="stylesheet" type="text/css" href="http://trentrichardson.com/examples/timepicker/jquery-ui-timepicker-addon.css">
+
+	<script type="text/javascript">
+	/*var _obj = {
+	  	method1: function() {
+	    	console.log(this);
+	  	},
+	  	method2: function() {
+	    	console.log(this);	
+	  	}
+	};*/
+	$(document).ready(function(){
+		// $('#timepicker').datepicker();
+		// $('#timepicker').timepicker();
+		$('#timepicker').datetimepicker({
+			dateFormat: 'd-M-y'
+		});
+	});
+	</script>
+</head>
+<body>
+	<!-- <button type="button" onClick="_obj.method1();">Click Me</button> -->
+	<input type="text" id="timepicker" >
+</body>
+</html>
